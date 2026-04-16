@@ -1,0 +1,42 @@
+name,latitude,longitude,address,phone,city,state,type
+AIIMS Delhi,28.5672,77.2100,Sri Aurobindo Marg New Delhi,011-26588500,New Delhi,Delhi,Government
+Safdarjung Hospital,28.5689,77.2058,Ring Road New Delhi,011-26165060,New Delhi,Delhi,Government
+Ram Manohar Lohia Hospital,28.6328,77.2090,Baba Kharak Singh Marg New Delhi,011-23404178,New Delhi,Delhi,Government
+Apollo Hospital Delhi,28.5437,77.2780,Sarita Vihar New Delhi,011-71791090,New Delhi,Delhi,Private
+Fortis Escorts Heart Institute,28.5541,77.2731,Okhla Road New Delhi,011-47135000,New Delhi,Delhi,Private
+Max Super Speciality Hospital Saket,28.5253,77.2162,Press Enclave Marg Saket New Delhi,011-26515050,New Delhi,Delhi,Private
+Sir Ganga Ram Hospital,28.6437,77.1900,Rajinder Nagar New Delhi,011-25750000,New Delhi,Delhi,Private
+Lok Nayak Hospital,28.6368,77.2411,Jawahar Lal Nehru Marg New Delhi,011-23232400,New Delhi,Delhi,Government
+GTB Hospital,28.6831,77.3128,Dilshad Garden New Delhi,011-22582525,New Delhi,Delhi,Government
+Deen Dayal Upadhyay Hospital,28.6285,77.0979,Hari Nagar New Delhi,011-25461981,New Delhi,Delhi,Government
+Medanta The Medicity,28.4487,77.0489,CH Baktawar Singh Road Gurugram,0124-4141414,Gurugram,Haryana,Private
+Artemis Hospital Gurugram,28.4688,77.0753,Sector 51 Gurugram,0124-4511111,Gurugram,Haryana,Private
+Fortis Memorial Research Institute,28.4731,77.0479,Sector 44 Gurugram,0124-4521111,Gurugram,Haryana,Private
+Manipal Hospital Dwarka,28.5923,77.0469,Sector 6 Dwarka New Delhi,011-40808080,New Delhi,Delhi,Private
+Venkateshwar Hospital,28.5982,77.0555,Sector 18A Dwarka New Delhi,011-42776222,New Delhi,Delhi,Private
+Indraprastha Apollo Hospital,28.5477,77.2805,Mathura Road New Delhi,011-71791090,New Delhi,Delhi,Private
+BLK Super Speciality Hospital,28.6514,77.1726,Pusa Road New Delhi,011-30403040,New Delhi,Delhi,Private
+Moolchand Hospital,28.5686,77.2427,Lajpat Nagar New Delhi,011-42000000,New Delhi,Delhi,Private
+Holy Family Hospital,28.5514,77.2521,Okhla Road New Delhi,011-26845000,New Delhi,Delhi,Private
+St Stephens Hospital,28.6715,77.2289,Tis Hazari New Delhi,011-23966001,New Delhi,Delhi,Private
+KEM Hospital Mumbai,18.9013,72.8345,Acharya Donde Marg Mumbai,022-24107000,Mumbai,Maharashtra,Government
+Lilavati Hospital Mumbai,19.0511,72.8313,Bandra West Mumbai,022-26751000,Mumbai,Maharashtra,Private
+Hinduja Hospital Mumbai,19.0455,72.8373,Veer Savarkar Marg Mumbai,022-24452222,Mumbai,Maharashtra,Private
+Kokilaben Dhirubhai Ambani Hospital,19.1368,72.8356,Rao Saheb Achutrao Patwardhan Marg Mumbai,022-30999999,Mumbai,Maharashtra,Private
+Tata Memorial Hospital,18.9983,72.8158,Dr Ernest Borges Marg Mumbai,022-24177000,Mumbai,Maharashtra,Government
+Nanavati Super Speciality Hospital,19.0993,72.8354,Vile Parle Mumbai,022-26182222,Mumbai,Maharashtra,Private
+Breach Candy Hospital,18.9702,72.8083,Bhulabhai Desai Road Mumbai,022-23667888,Mumbai,Maharashtra,Private
+NIMHANS Bangalore,12.9434,77.5954,Hosur Road Bangalore,080-46110007,Bangalore,Karnataka,Government
+Manipal Hospital Bangalore,12.9591,77.6463,98 HAL Airport Road Bangalore,080-25024444,Bangalore,Karnataka,Private
+Fortis Hospital Bangalore,12.9399,77.6165,Bannerghatta Road Bangalore,080-66214444,Bangalore,Karnataka,Private
+Apollo Hospital Bangalore,12.9279,77.5985,154/11 Bannerghatta Road Bangalore,080-26304050,Bangalore,Karnataka,Private
+Narayana Health City Bangalore,12.8781,77.6405,258/A Bommasandra Bangalore,080-71222222,Bangalore,Karnataka,Private
+Apollo Hospital Chennai,13.0569,80.2425,Greams Lane Chennai,044-28293333,Chennai,Tamil Nadu,Private
+Madras Medical College,13.0696,80.2855,Park Town Chennai,044-25305000,Chennai,Tamil Nadu,Government
+PGIMER Chandigarh,30.7659,76.7758,Sector 12 Chandigarh,0172-2755555,Chandigarh,Punjab,Government
+Christian Medical College Vellore,12.9235,79.1328,Ida Scudder Road Vellore,0416-2281000,Vellore,Tamil Nadu,Private
+Nizam Institute of Medical Sciences,17.4169,78.4482,Punjagutta Hyderabad,040-23489000,Hyderabad,Telangana,Government
+Apollo Hospital Hyderabad,17.4256,78.4485,Jubilee Hills Hyderabad,040-23607777,Hyderabad,Telangana,Private
+KIMS Hospital Hyderabad,17.4432,78.3985,Minister Road Secunderabad,040-44885000,Hyderabad,Telangana,Private
+Yashoda Hospital Hyderabad,17.4401,78.4927,Rajbhavan Road Somajiguda,040-45677777,Hyderabad,Telangana,Private
+Care Hospital Hyderabad,17.4264,78.4597,Road No 1 Banjara Hills,040-30418888,Hyderabad,Telangana,Private

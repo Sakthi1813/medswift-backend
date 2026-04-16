@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>MedSwift - Urgent Rescue Alert System</title>
+<link rel="stylesheet" href="/static/css/style.css"/>
+</head>
+<body class="landing-body">
+<header class="landing-header">
+  <div class="logo-mark">
+    <div class="logo-cross">+</div>
+    <span class="logo-text">MedSwift</span>
+  </div>
+  <a href="/login" class="btn-outline">Sign In</a>
+</header>
+
+<main class="landing-main">
+  <section class="hero-section">
+    <div class="hero-badge">Emergency Response System &mdash; India</div>
+    <h1 class="hero-title">Every Second<br/>Counts.</h1>
+    <p class="hero-sub">MedSwift connects patients with the nearest ambulance and hospital in real time. Intelligent dispatch. Live tracking. Instant alerts.</p>
+    <a href="/signup" class="btn-primary">Request Emergency Transport</a><br/>
+    <a href="/login" class="btn-text-link">Already have an account? Sign in &rarr;</a>
+  </section>
+
+  <section class="features-section">
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">&#128205;</div>
+        <h3>GPS Detection</h3>
+        <p>Automatic location detection pinpoints your exact coordinates and finds resources within reach.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128657;</div>
+        <h3>Nearest Ambulance</h3>
+        <p>Haversine-based nearest neighbor search dispatches the closest available unit instantly.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#127973;</div>
+        <h3>Hospital Matching</h3>
+        <p>Identifies top 5 nearest hospitals from a database of 50+ verified facilities across India.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128506;</div>
+        <h3>Live Route Map</h3>
+        <p>Optimized routing via OpenRouteService with real-time polyline visualization on the map.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128140;</div>
+        <h3>Instant Alerts</h3>
+        <p>SMTP email notifications sent automatically to the hospital and your emergency contacts.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#9989;</div>
+        <h3>Booking Confirmation</h3>
+        <p>Unique booking ID, driver details, ETA, and live status updates throughout the journey.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-section">
+    <h2>How It Works</h2>
+    <ol class="steps-list">
+      <li><span class="step-num">01</span><span>Log in and click <strong>Book Emergency Transport</strong></span></li>
+      <li><span class="step-num">02</span><span>System detects your GPS coordinates automatically</span></li>
+      <li><span class="step-num">03</span><span>Haversine algorithm identifies nearest 5 hospitals</span></li>
+      <li><span class="step-num">04</span><span>Nearest available ambulance is dispatched</span></li>
+      <li><span class="step-num">05</span><span>Optimized route generated and displayed on map</span></li>
+      <li><span class="step-num">06</span><span>Hospital and emergency contacts are notified via email</span></li>
+      <li><span class="step-num">07</span><span>Track ambulance in real time until arrival</span></li>
+    </ol>
+  </section>
+</main>
+
+<footer class="landing-footer">
+  <p>MedSwift &mdash; Emergency Response System &copy; 2024</p>
+  <p class="footer-note">&#9888; For life-threatening emergencies always dial 112</p>
+</footer>
+</body>
+</html>

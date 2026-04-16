@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>MedSwift - Dashboard</title>
+<link rel="stylesheet" href="/static/css/style.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body class="dashboard-body">
+
+<nav class="dash-nav">
+  <a href="/" class="logo-mark">
+    <div class="logo-cross">+</div>
+    <span class="logo-text">MedSwift</span>
+  </a>
+  <div class="nav-right">
+    <span id="user-display" class="user-name-display"></span>
+    <button class="btn-outline btn-sm" onclick="handleLogout()">Sign Out</button>
+  </div>
+</nav>
+
+<div class="dash-layout">
+  <aside class="dash-sidebar">
+
+    <!-- Location -->
+    <div class="sidebar-section">
+      <div class="section-label">Your Location</div>
+      <div id="location-status" class="location-box">
+        <span id="loc-text">Detecting location...</span>
+        <button class="btn-sm btn-outline" onclick="detectLocation()">Refresh</button>
+      </div>
+      <div id="coords-display" class="coords-small" style="display:none;"></div>
+    </div>
+
+    <!-- Emergency type -->
+    <div class="sidebar-section">
+      <div class="section-label">Emergency Type</div>
+      <div class="emergency-types">
+        <button class="etype-btn active" data-type="General"     onclick="selectType(this)">General</button>
+        <button class="etype-btn"        data-type="Cardiac"     onclick="selectType(this)">Cardiac</button>
+        <button class="etype-btn"        data-type="Trauma"      onclick="selectType(this)">Trauma</button>
+        <button class="etype-btn"        data-type="Stroke"      onclick="selectType(this)">Stroke</button>
+        <button class="etype-btn"        data-type="Respiratory" onclick="selectType(this)">Respiratory</button>
+        <button class="etype-btn"        data-type="Maternity"   onclick="selectType(this)">Maternity</button>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="sidebar-section">
+      <div class="section-label">Description (Optional)</div>
+      <textarea id="emergency-desc" class="form-input form-textarea"
+        placeholder="Brief description of the emergency..."></textarea>
+    </div>
+
+    <!-- Book button -->
+    <button id="book-btn" class="btn-emergency btn-full" onclick="initiateBooking()">
+      Book Emergency Transport
+    </button>
+
+    <!-- ════════════════════════════════════════════
+         NEARBY AMBULANCES PANEL  (NEW)
+    ════════════════════════════════════════════ -->
+    <div id="nearby-ambulances-panel" style="display:none;">
+      <div class="sidebar-section">
+        <div class="section-label-row">
+          <div class="section-label">Nearby Ambulances
+            <span id="amb-available-badge" class="badge-green"></span>
+          </div>
+          <span class="live-dot-wrap">
+            <span class="live-dot"></span> Live
+          </span>
+        </div>
+        <div id="nearby-ambulances-list" class="nearby-amb-list"></div>
+      </div>
+    </div>
+
+    <!-- Booking confirmation -->
+    <div id="booking-panel" style="display:none;">
+      <div class="sidebar-section">
+        <div class="section-label">Booking Confirmed</div>
+        <div class="booking-card">
+          <div class="booking-id" id="b-id"></div>
+          <div class="booking-row"><span>Driver</span><strong id="b-driver"></strong></div>
+          <div class="booking-row"><span>Vehicle</span><strong id="b-vehicle"></strong></div>
+          <div class="booking-row"><span>ETA</span><strong id="b-eta"></strong></div>
+          <div class="booking-row"><span>Status</span><span id="b-status" class="status-badge">Confirmed</span></div>
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <div class="section-label">Assigned Hospital</div>
+        <div class="hospital-detail-card" id="assigned-hospital-card"></div>
+      </div>
+    </div>
+
+    <!-- Hospitals panel -->
+    <div id="hospitals-panel" style="display:none;">
+      <div class="sidebar-section">
+        <div class="section-label">Nearest Hospitals</div>
+        <div id="hospitals-list"></div>
+      </div>
+    </div>
+
+  </aside>
+
+  <main class="dash-map-container">
+    <div id="map"></div>
+    <div id="map-legend" class="map-legend">
+      <div class="legend-item"><span class="legend-dot user-dot"></span> You</div>
+      <div class="legend-item"><span class="legend-dot amb-dot"></span> Ambulance</div>
+      <div class="legend-item"><span class="legend-dot hosp-dot"></span> Hospital</div>
+    </div>
+    <div id="status-bar" class="status-bar" style="display:none;">
+      <span id="status-msg">Locating...</span>
+    </div>
+  </main>
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<!-- Leaflet -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<!-- Socket.IO (served by Flask-SocketIO) -->
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script>
+const firebaseConfig = {{ firebase_config | tojson }};
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+</script>
+<script src="/static/js/map.js"></script>
+<script src="/static/js/main.js"></script>
+</body>
+</html>

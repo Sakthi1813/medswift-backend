@@ -1,0 +1,10 @@
+[
+  {"id": "AMB001", "driver_name": "Rajesh Kumar",  "driver_phone": "+91-9876543210", "vehicle_number": "DL-01-AB-1234", "latitude": 28.6100, "longitude": 77.2300, "status": "available", "type": "ALS", "hospital": "AIIMS Delhi"},
+  {"id": "AMB002", "driver_name": "Suresh Singh",  "driver_phone": "+91-9876543211", "vehicle_number": "DL-02-CD-5678", "latitude": 28.5900, "longitude": 77.1800, "status": "available", "type": "BLS", "hospital": "Safdarjung Hospital"},
+  {"id": "AMB003", "driver_name": "Mohan Verma",   "driver_phone": "+91-9876543212", "vehicle_number": "DL-03-EF-9012", "latitude": 28.6300, "longitude": 77.2100, "status": "available", "type": "ALS", "hospital": "RML Hospital"},
+  {"id": "AMB004", "driver_name": "Amit Sharma",   "driver_phone": "+91-9876543213", "vehicle_number": "DL-04-GH-3456", "latitude": 28.5700, "longitude": 77.2500, "status": "available", "type": "BLS", "hospital": "GTB Hospital"},
+  {"id": "AMB005", "driver_name": "Vikram Patel",  "driver_phone": "+91-9876543214", "vehicle_number": "DL-05-IJ-7890", "latitude": 28.6200, "longitude": 77.1900, "status": "available", "type": "ALS", "hospital": "Lok Nayak Hospital"},
+  {"id": "AMB006", "driver_name": "Deepak Yadav",  "driver_phone": "+91-9876543215", "vehicle_number": "DL-06-KL-2345", "latitude": 28.6450, "longitude": 77.2200, "status": "available", "type": "BLS", "hospital": "Hindu Rao Hospital"},
+  {"id": "AMB007", "driver_name": "Priya Mehta",   "driver_phone": "+91-9876543216", "vehicle_number": "DL-07-MN-6789", "latitude": 28.5600, "longitude": 77.2650, "status": "busy",      "type": "ALS", "hospital": "Max Saket"},
+  {"id": "AMB008", "driver_name": "Anil Gupta",    "driver_phone": "+91-9876543217", "vehicle_number": "DL-08-OP-0123", "latitude": 28.6700, "longitude": 77.1600, "status": "available", "type": "BLS", "hospital": "Fortis Vasant Kunj"}
+]
